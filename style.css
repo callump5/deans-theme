@@ -29,13 +29,20 @@ Text Domain: Deans Theme
         text-decoration: none;
         list-style: none;
         color: #3f3f3f;
-        font-family: 'Lexend Deca', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
+h1, h2, h3, h4, h5, button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p, a {
+    font-family: 'Raleway', sans-serif;
+}
 /* Index */
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -71,7 +78,7 @@ p{
     }
 
     nav {
-        width: 70%;
+        width: 60%;
     }
 
     #logo {
@@ -101,7 +108,7 @@ p{
     #landing {
         position: relative;
         height: 80vh;
-        background-image: url("../imgs/architecture-building-city-264507(1).jpg");
+        background-image: url("images/architecture-building-city-264507(1).jpg");
         background-position: center;
         background-size: 100% auto;
         background-color: #8b8b8b;
@@ -135,6 +142,7 @@ p{
         border: 5px solid white;
         background-color: transparent;
         border-radius: 2px;
+        margin-bottom: 20px;
     }
 
     #jag {
@@ -143,17 +151,18 @@ p{
         left: 0;
         right: 0;
         height:80vh;
-        background-image: url("../imgs/jagged.png");
+        background-image: url("images/jagged.png");
         background-size: 100% 40%;
         background-repeat: no-repeat;
         background-position: bottom;
+
     }
 
 /* Page Posts */
 
     .page-post {
         position: relative;
-        height: 40vh;
+        min-height: 40vh;
         padding-left: 40%;
         margin-bottom: 40px;
         background-color: #f8f8f8;
@@ -204,26 +213,26 @@ p{
 
 /* About Page */
 
-    #about-us, #contact-us {
+    #about-us, #contact-us, #home, #about {
         padding: 0;
         background-color: transparent;
         box-shadow: none;
     }
 
-    #about-us h1 {
+    #about-us h1, #home h1, #about h1 {
         font-size: 2em;
         margin-bottom: 5px;
         line-height: 1em;
     }
 
-    #about-us p {
+    #about-us p, #home p, #about p {
         line-height: 1.8em;
     }
 
     #contact-us {
         margin: 0;
     }
-    #contact-us p {
+    #contact-us p  {
         font-size: 1.5em;
         margin-bottom: 20px;
     }

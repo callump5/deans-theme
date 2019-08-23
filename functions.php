@@ -55,7 +55,9 @@ if(get_page_by_title("Home") == null)
 }
 
 
+
 #Custom Logo
+
 add_theme_support( 'custom-logo' );
 
 function themename_custom_logo_setup() {

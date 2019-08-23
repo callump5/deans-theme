@@ -10,7 +10,7 @@
         </div>
         <div class='align-right'>
             <p><a href="#">Back to top</a></p>
-            <p>Designed by CP</p>
+            <a href='https://www.callum-pullinger.co.uk'>Designed by CP</a>
         </div>
     </div>
 </footer>

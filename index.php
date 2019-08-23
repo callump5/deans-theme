@@ -65,7 +65,7 @@
 
     <div id="primary" class="site-content">
 
-    <div id="landing">
+    <div id="landing" class='custom-background'>
         <h2><?php bloginfo('name')?></h2>
         <p><?php bloginfo('description')?></p>
         <a>Contact Us</a>
