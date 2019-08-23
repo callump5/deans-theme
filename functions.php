@@ -44,7 +44,7 @@ if(get_page_by_title("Home") == null)
         "post_status" => "publish",
         "post_type" => "page",
         "menu_order" => "-100",
-        "page_template" => "single-page-theme.php"
+        "page_template" => "index.php"
     );
 
     wp_insert_post($post);

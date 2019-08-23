@@ -1,0 +1,303 @@
+/*
+Theme Name: Deans Wordpress Theme
+Theme URI: https://www.lyrathemes.com/bootstrap-wordpress-theme-tutorial/
+Author: Callum
+Author URI: www.callum-pullingr.co.uk
+Description: A simple, professional Wordpress theme
+Version: 1.0
+Text Domain: Deans Theme
+*/
+
+
+/*
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Lexend Deca', sans-serif;
+
+*/
+/* Index */
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* Header */
+
+    header, footer{
+        background-color: #f8f8f8;
+        padding: 5px 0;
+    }
+
+    header > div.container {
+         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        width: 30%;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    #logo {
+        padding: 10px 0;
+    }
+
+    .custom-logo {
+        width: auto;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.8em;
+
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+
+/* Landing */
+    #landing {
+        position: relative;
+        height: 80vh;
+        background-image: url("images/architecture-building-city-264507(1).jpg");
+        background-position: center;
+        background-size: 100% auto;
+        background-color: #8b8b8b;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    #landing h2  {
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 5px;
+    }
+
+    #landing p {
+        font-size: 1.2em;
+
+        color: white;
+        margin: 10px 0 20px 0;
+    }
+
+    #landing a {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: white;
+        padding: 12px 20px 10px 20px;
+        border: 5px solid white;
+        background-color: transparent;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    #jag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:80vh;
+        background-image: url("images/jagged.png");
+        background-size: 100% 40%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+    }
+
+/* Page Posts */
+
+    .page-post {
+        position: relative;
+        min-height: 40vh;
+        padding-left: 40%;
+        margin-bottom: 40px;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-shadow: #dfdfdf 2px 2px 5px;
+    }
+    .page-post .wp-block-image img {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        padding-right: 20px;
+    }
+
+    article.page-post:nth-child(even) > figure:nth-child(4) > img:nth-child(1){
+        left: unset;
+        right: 0;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+    article.page-post:nth-child(even){
+        padding-left: 0;
+        padding-right: 40%;
+    }
+
+    .page-post h1, #contact h1 {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+    .page-post h1, .page-post p {
+        padding: 0 40px;
+    }
+
+    .page-post p {
+        text-align: justify;
+    }
+    article.page-post:last-child {
+        padding: 20px;
+    }
+
+
+/* About Page */
+
+    #about-us, #contact-us, #home, #about {
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #about-us h1, #home h1, #about h1 {
+        font-size: 2em;
+        margin-bottom: 5px;
+        line-height: 1em;
+    }
+
+    #about-us p, #home p, #about p {
+        line-height: 1.8em;
+    }
+
+    #contact-us {
+        margin: 0;
+    }
+    #contact-us p  {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* Contact Form */
+
+    #contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+
+        margin-bottom: 80px;
+    }
+
+    #contact form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #email-name p{
+        width: 49%;
+    }
+
+    #message-text-area  {
+        width: 100%;
+    }
+
+    form p {
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #acacac;
+    }
+
+    form button {
+        background: transparent;
+        border: 3px solid #acacac;
+        padding: 7px 15px 5px 15px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    #contact-content {
+        width: 100%;
+    }
+
+    .error{
+        padding: 5px 9px;
+        border: 1px solid red;
+        color: red;
+        border-radius: 3px;
+        width: 90%;
+        margin: 10px auto;
+      }
+
+      .success{
+        padding: 5px 9px;
+        border: 1px solid green;
+        color: green;
+        border-radius: 3px;width: 90%;
+        margin: 10px auto;
+      }
+
+      form span{
+        color: red;
+      }
+
+
+
+    /* Footer */
+
+footer > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.align-right {
+    text-align: right;
+}

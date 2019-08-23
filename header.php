@@ -14,14 +14,16 @@
 
 <div class="blog-masthead">
     <header>
-    <div class='container'>
-    <?php if ( has_custom_logo() ) {
-        the_custom_logo();
-    } else {
-        echo '<h1 id="logo">'. get_bloginfo( 'name' ) .'</h1>';
-    }
-    ?>
-
+    <div id='nav-container'>
+        <div id='nav-header'>
+            <?php if ( has_custom_logo() ) {
+                the_custom_logo();
+            } else {
+                echo '<h1 id="logo">'. get_bloginfo( 'name' ) .'</h1>';
+            }
+            ?>
+            <img id='menu-toggle' src='<?php bloginfo('template_url'); ?>/images/menu-icon.png'>
+        </div>
         <nav class="blog-nav">
           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>

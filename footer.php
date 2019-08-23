@@ -10,7 +10,7 @@
         </div>
         <div class='align-right'>
             <p><a href="#">Back to top</a></p>
-            <a href='https://www.callum-pullinger.co.uk'>Designed by CP</a>
+            <a id="my-tag" href='https://www.callum-pullinger.co.uk'>Designed by CP</a>
         </div>
     </div>
 </footer>
@@ -23,6 +23,43 @@ $("header nav ul li a").click(function(e) {
     $('html,body').animate({scrollTop: offset},'slow');
 });
 </script>
+
+
+
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+        var nav = false;
+
+         function openNav() {
+            $('#menu-menu-1').css('display', 'flex');
+            nav = true;
+         }
+
+        function closeNav() {
+           $('#menu-menu-1').css('display', 'none');
+
+
+           nav = false;
+        }
+
+        function toggleNav() {
+            nav ? closeNav() : openNav();
+        }
+
+        $( "#menu-toggle" ).click(function() {
+
+          $( "#menu-menu-1" ).toggle( "fast", function() {
+             toggleNav()
+            });
+        });
+
+      });
+
+    </script>
+
+
 
 <?php wp_footer(); ?>
 </body>

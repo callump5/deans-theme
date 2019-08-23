@@ -66,10 +66,12 @@
     <div id="primary" class="site-content">
 
     <div id="landing" class='custom-background'>
+        <div id="landing-content" class='container'>
         <h2><?php bloginfo('name')?></h2>
         <p><?php bloginfo('description')?></p>
         <a>Contact Us</a>
         <div id='jag'></div>
+        </div>
     </div>
 
     <div class="container">

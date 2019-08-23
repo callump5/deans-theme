@@ -9,17 +9,11 @@ Text Domain: Deans Theme
 */
 
 
-/*
+/* For mobile phones: */
 
-    font-family: 'Roboto', sans-serif;
 
-    font-family: 'Raleway', sans-serif;
 
-    font-family: 'Lexend Deca', sans-serif;
-
-*/
-
-/* Reset */
+/* Reset ------------ */
 
     * {
         margin: 0;
@@ -32,98 +26,106 @@ Text Domain: Deans Theme
         font-family: 'Roboto', sans-serif;
     }
 
-h1, h2, h3, h4, h5, button {
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-p, a {
-    font-family: 'Raleway', sans-serif;
-}
-/* Index */
-
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.flex-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-p{
-
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Header */
-
-    header, footer{
-        background-color: #f8f8f8;
-        padding: 5px 0;
+    h1, h2, h3, h4, h5, button {
+        font-family: 'Lexend Deca', sans-serif;
     }
-    header > div.container {
-         display: flex;
+
+    p, a {
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+
+/* Index --------------*/
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .flex-row {
+        width: 100%;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
     }
 
-    header h1 {
-        font-size: 1.5em;
-        width: 30%;
+
+/* Nav ----------------*/
+
+    header, footer {
+
+        background-color: #f8f8f8;
     }
 
-    nav {
-        width: 60%;
-    }
-
-    #logo {
-        padding: 10px 0;
-    }
-
-    .custom-logo {
-        width: auto;
-        height: 100px;
-    }
-
-    nav ul {
+    #nav-header {
+        width: 90%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    nav ul li a {
-        font-size: 0.8em;
+    .custom-logo {
+        width: 200px;
+        height: auto;
+        padding: 15px 0;
+    }
 
-        font-family: 'Lexend Deca', sans-serif;
+    #menu-toggle {
+        width: auto;
+        height: 30px;
+        margin-right: 10px;
+    }
+    #menu-menu-1 {
+        display: none;
+        flex-direction: column;
+        border-top: 2px solid #bcbcbc;
+    }
+    #menu-menu-1 li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #bcbcbc;
+        padding: 10px 0;
     }
 
 
-/* Landing */
+/* Landing ----------*/
+
+
     #landing {
         position: relative;
         height: 80vh;
         background-image: url("images/architecture-building-city-264507(1).jpg");
         background-position: center;
-        background-size: 100% auto;
+        background-size:  auto 100%;
         background-color: #8b8b8b;
         background-blend-mode: multiply;
         background-repeat: no-repeat;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         color: white;
+        z-index: -1;
     }
-    #landing h2  {
+
+    #landing-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #landing-content h2  {
         color: white;
         font-size: 2.5em;
+        text-align: center;
+        line-height: 1.1em;
         margin-bottom: 5px;
     }
 
@@ -146,8 +148,9 @@ p{
     }
 
     #jag {
+        z-index: -10;
         position: absolute;
-        bottom: 0;
+        bottom: -40px;
         left: 0;
         right: 0;
         height:80vh;
@@ -155,10 +158,179 @@ p{
         background-size: 100% 40%;
         background-repeat: no-repeat;
         background-position: bottom;
-
     }
 
-/* Page Posts */
+/* Pages ----------------*/
+
+    .page-post {
+        margin-bottom: 40px;
+    }
+
+    .page-post h1 {
+        width: 70%;
+            font-size: 2em;
+            line-height: 1.2em;
+        border-bottom: 2px solid gray;
+        margin-bottom: 5px;
+        }
+
+    .page-post img {
+        margin-top: 10px;
+    }
+
+    .page-post p {
+        text-align: justify;
+    }
+
+/* Form ---------------*/
+
+    #contact {
+        margin-bottom: 80px;
+    }
+
+    form p {
+        margin-bottom: 10px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 3px solid lightgray;
+        padding: 0;
+    }
+
+    form button {
+        background: transparent;
+        border: 2px solid lightgray;
+        padding: 7px 15px 5px 15px;
+    }
+
+    .error{
+        padding: 5px 9px;
+        border: 1px solid red;
+        color: red;
+        border-radius: 3px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .success{
+        padding: 5px 9px;
+        border: 1px solid green;
+        color: green;
+        border-radius: 3px;width: 90%;
+        margin: 10px auto;
+    }
+
+    form span{
+        color: red;
+    }
+
+
+/* Footer -------------- */
+
+footer {
+    padding: 20px 0;
+}
+
+footer > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.align-right {
+    text-align: right;
+}
+
+
+#my-tag {
+    font-size: 0.7em;
+}
+
+
+/* For laptop: */
+@media only screen and (min-width: 768px) {
+
+
+/* Nav ----------------*/
+
+    #nav-header {
+        width: 20%;
+        margin: 0;
+    }
+
+    #nav-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    nav{
+        width: 75%;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu-menu-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: none
+    }
+    #menu-menu-1 li {
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+
+    #menu-menu-1 a {
+        font-size: 0.9em;
+    }
+
+
+/* Landing ----------*/
+
+
+    #landing {
+        background-size: 100% auto;
+    }
+
+
+
+/* Pages ----------------*/
+
+    .page-post {
+        margin-bottom: 40px;
+    }
+
+    .page-post h1 {
+        width: unset;
+        border-bottom: none;
+    }
+
+    .page-post img {
+        margin-top: 0;
+    }
+
+    .page-post p {
+        text-align: justify;
+    }
+
 
     .page-post {
         position: relative;
@@ -172,6 +344,7 @@ p{
         align-items: flex-start;
         box-shadow: #dfdfdf 2px 2px 5px;
     }
+
     .page-post .wp-block-image img {
         top: 0;
         left: 0;
@@ -211,9 +384,10 @@ p{
     }
 
 
-/* About Page */
+/* About Page --------------*/
 
     #about-us, #contact-us, #home, #about {
+        min-height: 20vh;
         padding: 0;
         background-color: transparent;
         box-shadow: none;
@@ -231,32 +405,18 @@ p{
 
     #contact-us {
         margin: 0;
+        margin-bottom: 40px;
     }
-    #contact-us p  {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-
 
 
     /* Contact Form */
 
     #contact {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
         padding: 0 40px;
 
         margin-bottom: 80px;
     }
 
-    #contact form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 
     #email-name p{
         width: 49%;
@@ -266,22 +426,6 @@ p{
         width: 100%;
     }
 
-    form p {
-        margin-bottom: 10px;
-    }
-
-    input, textarea {
-        width: 100%;
-        background-color: transparent;
-        border: none;
-        border-bottom: 3px solid #acacac;
-    }
-
-    form button {
-        background: transparent;
-        border: 3px solid #acacac;
-        padding: 7px 15px 5px 15px;
-    }
 
     textarea {
         width: 100%;
@@ -291,37 +435,10 @@ p{
         width: 100%;
     }
 
-    .error{
-        padding: 5px 9px;
-        border: 1px solid red;
-        color: red;
-        border-radius: 3px;
-        width: 90%;
-        margin: 10px auto;
-      }
 
-      .success{
-        padding: 5px 9px;
-        border: 1px solid green;
-        color: green;
-        border-radius: 3px;width: 90%;
-        margin: 10px auto;
-      }
-
-      form span{
-        color: red;
-      }
-
-
-
-    /* Footer */
-
-footer > .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+}
+/* For laptop: */
+@media only screen and (min-width: 1100px) {
+  .col-1 {width: 8.33%;}
 }
 
-.align-right {
-    text-align: right;
-}
